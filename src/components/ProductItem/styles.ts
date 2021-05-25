@@ -7,6 +7,8 @@ export const Product = styled(View)`
   border: 1px solid #d1d1d1;
   border-radius: 5px;
   background-color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
 `;
 
 export const ProductImage = styled(Image)`
@@ -35,6 +37,11 @@ export const Icon = styled(FontAwesome)`
 `;
 
 export const Rating = styled(Text)``;
+
+export const PriceContainer = styled(View)`
+  flex-direction: row;
+  align-items: center;
+`;
 
 export const Price = styled(Text)`
   font-weight: bold;
