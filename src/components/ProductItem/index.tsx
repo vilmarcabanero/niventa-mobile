@@ -14,7 +14,7 @@ interface ProductItemProps {
   };
 }
 
-const Index = ({item}: ProductItemProps) => {
+const ProductItem = ({item}: ProductItemProps) => {
   return (
     <S.Product>
       <S.ProductImage source={{uri: item.image}} />
@@ -24,6 +24,7 @@ const Index = ({item}: ProductItemProps) => {
         <S.RatingsContainer>
           {[0, 0, 0, 0, 0].map((el, i) => (
             <S.Icon
+              key={`${item.id}-${i}`}
               size={18}
               color={'#e47911'}
               name={i < Math.floor(item.avgRating) ? 'star' : 'star-o'}
@@ -41,4 +42,4 @@ const Index = ({item}: ProductItemProps) => {
   );
 };
 
-export default Index;
+export default ProductItem;

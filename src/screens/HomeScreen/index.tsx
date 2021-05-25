@@ -3,15 +3,16 @@ import * as S from './styles';
 import ProductItem from '../../components/ProductItem';
 import products from '../../data/products';
 
-const Index = () => {
+const HomeScreen = () => {
   return (
     <S.Container>
-      <ProductItem item={products[6]} />
-      {/* <ProductItem />
-      <ProductItem />
-      <ProductItem /> */}
+      <S.SFlatList
+        data={products}
+        renderItem={({item}) => <ProductItem item={item} />}
+        showsVerticalScrollIndicator={false}
+      />
     </S.Container>
   );
 };
 
-export default Index;
+export default HomeScreen;
