@@ -4,6 +4,7 @@ import {View, Text} from 'react-native';
 export const Container = styled(View)`
   width: 100%;
   padding: 10px;
+  background-color: #fff;
 `;
 
 export const Title = styled(Text)``;
@@ -24,4 +25,10 @@ export const OldPrice = styled(Text)`
   text-decoration-line: line-through;
 `;
 
-export const Description = styled(Text)``;
+export const Description = styled(Text)`
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 20px;
+`;
+
+export const Quantity = styled(Text)``;
